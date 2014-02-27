@@ -1,0 +1,11 @@
+
+alias cls=clear
+alias w=who
+alias dl="clear ; echo '-------------- Directory ---------------' ; ls -ls | more"
+alias da="clear ; echo '-------------- Directory ---------------' ; ls -lsa | more"
+
+PS1="[\w]\h> "
+
+export PS1
+
+set -o vi
