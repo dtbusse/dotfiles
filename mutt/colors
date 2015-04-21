@@ -1,0 +1,97 @@
+color attachment	brightmagenta	default
+color error		brightred	default
+color hdrdefault	green		default
+color indicator		brightwhite	red
+color markers		brightcyan	default
+color message		brightcyan	default
+color normal		default		default
+color quoted		brightblue	default
+color search		default		green
+color signature		red		default
+color status		white		blue
+color tilde		magenta		default
+color tree		magenta		default
+
+color signature brightred default
+color underline yellow default
+color header cyan white ^(From|Subject): # Important headers
+color body magenta default "(ftp|http)://[^ ]+"  # picks up URLs
+color body magenta default [-a-z_0-9.]+@[-a-z_0-9.]+
+
+#  Coloring quoted text - coloring the first 7 levels:
+color quoted    cyan default
+color quoted1   yellow default
+color quoted2   red default
+color quoted3   green default
+color quoted4   cyan default
+color quoted5   yellow default
+color quoted6   red default
+color quoted7   green default
+
+color body  yellow default "[;:]-[)/(|]"
+color body  yellow default "[;:][)/(|]"
+color body  green default "[[:alpha:]]\+://[^ ]*"
+
+# colorize smileys
+color index brightyellow default ~N      # New
+color index yellow default ~O              # Old
+color index magenta default ~F
+color index blue default ~T
+color index red default ~D
+
+# colorize info related to the sender
+color header       red      default     "date: "
+color header       magenta    default     "from: "
+color header       cyan      default    "from "
+color header       green    default    "sender: "
+
+# organization and organisation
+color header       red      default    "organi[sz]ation: "
+
+# programs involved in the creation and sending
+color header   yellow default    "user-agent: "
+color header       yellow default    "x-editor: "
+color header       yellow      default    "x-mailer: "
+color header   yellow default    "x-posting-agent: "
+
+# message-id, in-reply-to and references
+color header       yellow      default    "message-id:"
+color header       red      default    "in-reply-to: "
+color header       red      default    "references: "
+
+#  Public Messages (related to MailLists or News/Usenet):
+color header       red      default  "newsgroups: "
+color header       red      default  "x-newsgroups: "
+#
+#  Redirection of answers (ie followups and replies):
+#  (using the same color for Reply-To as for From: -
+#   unfortunately you cannot "link" color groups.)
+color header brightgreen    default    "followup-to: "
+color header brightgreen    default    "mail-followup-to: "
+color header cyan   default "reply-to: "
+
+# signals of importance, precedence and priority
+color header       yellow   default    "importance: "
+color header       blue     default    "importance: normal"
+color header       yellow   default    "precedence: "
+color header       yellow   default    "priority: "
+color header       red      white    "priority: high"
+color header       red      white    "priority: urgent"
+color header       blue     default    "priority: normal"
+color header       yellow   default    "x-priority: "
+color header       yellow   default    "X-MSMail-Priority: "
+
+# subject
+color header       blue   default  "subject: "
+
+color header green   default    "^bcc: [^ ]"
+color header green   default    "^cc: [^ ]"
+color header green   default    "^to: [^ ]"
+
+# anti spam junk
+color header   white  magenta   "X-Spam-Status: "
+color header   white  magenta   "X-Spam-Level: "
+color header   white  magenta   "X-Virus-Scanned: "
+color header   white  magenta   "X-Remote-IP: "
+
+############# jpf color sidebar_new  blue default

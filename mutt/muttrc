@@ -1,0 +1,37 @@
+## Set up our email service
+set spoolfile=imaps://mail.HERE.com:993/INBOX
+set folder=imaps://mail.HERE.com:993/
+set imap_user="dbusse@HERE.com"
+set postponed="imaps://mail.HERE.com:993/Drafts"
+set record="imaps://mail.HERE.com/Sent Items"
+
+
+## how to sort 
+set sort="threads"
+set strict_threads="yes"
+set sort_aux="reverse-date-received"
+
+## Set the number of messages to display at once
+set pager_index_lines=15
+
+## Read HTML email
+auto_view text/html
+
+## Automatically poll subscribed mailboxes for new mail (new in 1.5.11)
+set imap_check_subscribed
+
+## Reduce polling frequency to a sane level
+set mail_check=60
+
+## And poll the current mailbox more often (not needed with IDLE in post 1.5.11)
+set timeout=10
+
+## Display download progress every 5K
+set net_inc=5
+
+## Set some headers
+my_hdr Organization: HERE, Inc.
+my_hdr X-URL: http://www.HERE.com/
+
+## Let's make it look pretty
+source "~/.mutt/colors"
