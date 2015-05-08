@@ -1,0 +1,11 @@
+
+### Set my aliases
+alias dl        "clear ; echo '-------------- Directory ----------------' ; ls -ls | more"
+alias da        "clear ; echo '-------------- Directory ----------------' ; ls -lsa | more"
+alias ut	uptime
+alias cls	clear
+alias h         history 25
+alias j         jobs -l
+
+### Set vi mode
+bindkey -v
