@@ -6,6 +6,7 @@ alias ut	uptime
 alias cls	clear
 alias h         history 25
 alias j         jobs -l
+alias ping5	ping -c 5
 
 ### Set vi mode
 bindkey -v
