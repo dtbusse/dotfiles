@@ -1,0 +1,49 @@
+set term=screen-256color
+set number		        " show line numbers
+set ruler		        " set the botom ruler
+set showmatch           " show matching bracket (briefly jump)
+set showmode            " show mode in status bar (insert/replace/...)
+set showcmd             " show typed command in status bar
+set ruler               " show cursor position in status bar
+set title   
+set laststatus=2        " use 2 lines for the status bar
+set matchtime=2         " show matching bracket for 0.2 seconds
+set matchpairs+=<:>     " specially for html
+set ignorecase          " case insensitive searching
+set smartcase           " but become case sensitive if you type uppercase characters
+set smartindent         " smart auto indenting
+set smarttab            " smart tab handling for indenting
+set tabstop=4           " number of spaces a tab counts for
+set shiftwidth=4        " spaces for autoindents
+set expandtab           " turn a tabs into spaces
+set matchpairs+=<:>     " specially for html
+syntax on
+set background=dark
+let g:solarized_termtrans = 1
+"-----------------------------------------------------------------------------
+"" Set up our color scheme
+"-----------------------------------------------------------------------------
+colorscheme jellybeans
+"-----------------------------------------------------------------------------
+"" Load Vundle: VUNDLE is a plugin manager for VIM
+"" install via: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"-----------------------------------------------------------------------------
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" addons
+" vundle (let vundle manage and update itself)
+Bundle 'gmarik/vundle'
+"-----------------------------------------------------------------------------
+"" NERD Tree Plugin Settings
+"" install via: git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+"-----------------------------------------------------------------------------
+Plugin 'scrooloose/nerdtree'
+"" Enable if you NERDTree to start automatically
+"autocmd vimenter * NERDTree 
+"" Toggle the NERD Tree on an off with F7
+nmap <F7> :NERDTreeToggle<CR>
+" Close the NERD Tree with Shift-F7
+"nmap <S-F7> :NERDTreeClose<CR>
+" Have NERD Tree always open on the right side
+" let g:NERDTreeWinPos = "right"
