@@ -6,4 +6,10 @@ alias da="clear ; echo '-------------- Directory ------------------' ; ls -lsa |
 # For OSX
 #alias dl="clear ; echo '-------------- Directory ------------------' ; CLICOLOR_FORCE=1 ls -ls | less -ceFRX"
 #alias da="clear ; echo '-------------- Directory ------------------' ; CLICOLOR_FORCE=1 ls -lsa | less -ceFRX"
+#alias pstree=proctree
 #
+alias v=vagrant
+alias h="history | tail -25"
+alias ping5="ping -c 5 "
+alias gpg=gpg2
+alias rtt="curl -o/dev/null -sw 'RTT,%{time_total} FB,%{time_starttransfer}\n'"
