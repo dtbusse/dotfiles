@@ -28,8 +28,9 @@ colorscheme jellybeans
 "" Load Vundle: VUNDLE is a plugin manager for VIM
 "" install via: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 "-----------------------------------------------------------------------------
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 
 " addons
 " vundle (let vundle manage and update itself)
@@ -40,10 +41,14 @@ Bundle 'gmarik/vundle'
 "-----------------------------------------------------------------------------
 Plugin 'scrooloose/nerdtree'
 "" Enable if you NERDTree to start automatically
-"autocmd vimenter * NERDTree 
+"autocmd vimenter * NERDTree
 "" Toggle the NERD Tree on an off with F7
-nmap <F7> :NERDTreeToggle<CR>
+map <F7> :NERDTreeToggle<CR>
 " Close the NERD Tree with Shift-F7
 "nmap <S-F7> :NERDTreeClose<CR>
 " Have NERD Tree always open on the right side
 " let g:NERDTreeWinPos = "right"
+"
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
