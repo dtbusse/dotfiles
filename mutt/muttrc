@@ -1,9 +1,10 @@
 ## Set up our email service
-set spoolfile=imaps://mail.HERE.com:993/INBOX
-set folder=imaps://mail.HERE.com:993/
-set imap_user="dbusse@HERE.com"
-set postponed="imaps://mail.HERE.com:993/Drafts"
-set record="imaps://mail.HERE.com/Sent Items"
+set spoolfile=imaps://mail.mke.4lpi.com:993/INBOX
+set folder=imaps://mail.mke.4lpi.com:993/
+set imap_user="dbusse"
+set postponed="imaps://mail.mke.4lpi.com:993/Drafts"
+set record="imaps://mail.mke.4lpi.com/Sent Items"
+set from="dbusse@4lpi.com"
 
 
 ## how to sort 
@@ -16,6 +17,7 @@ set pager_index_lines=15
 
 ## Read HTML email
 auto_view text/html
+alternative_order text/plain text/enriched text/html 
 
 ## Automatically poll subscribed mailboxes for new mail (new in 1.5.11)
 set imap_check_subscribed
@@ -33,5 +35,40 @@ set net_inc=5
 my_hdr Organization: HERE, Inc.
 my_hdr X-URL: http://www.HERE.com/
 
+## Bind keys
+bind index   G    imap-fetch-mail
+bind pager   ]    "half-down"         # scroll down 1/2 page
+bind pager   [    "half-up"           # scroll up 1/2 page
+
 ## Let's make it look pretty
 source "~/.mutt/colors"
+
+#  3.8. Ignoring (weeding) unwanted message headers
+#
+#  Usage: [un]ignore pattern [ pattern ... ]
+#
+#  Messages often have many header fields added by automatic processing
+#  systems, or which may not seem useful to display on the screen.  This
+#  command allows you to specify header fields which you don't normally
+#  want to see.
+#
+#  You do not need to specify the full header field name.  For example,
+#  ``ignore content-'' will ignore all header fields that begin with the
+#  pattern ``content-''.
+#
+#  To remove a previously added token from the list, use the ``unignore''
+#  command.  Note that if you do ``ignore x-'' it is not possible to
+#  ``unignore x-mailer,'' for example.  The ``unignore'' command does not
+#  make Mutt display headers with the given pattern.
+#
+#  ``unignore *'' will remove all tokens from the ignore list.
+#
+# If you want to see all headers again type "h".
+#
+# Sven's draconian header weeding
+ignore *
+unignore from date subject to cc
+unignore organization organisation x-mailer: x-newsreader: x-mailing-list:
+unignore posted-to:
+unignore Message-Id
+unignore Content-Type
