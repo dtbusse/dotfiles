@@ -1,10 +1,10 @@
 ## Set up our email service
-set spoolfile=imaps://mail.mke.4lpi.com:993/INBOX
-set folder=imaps://mail.mke.4lpi.com:993/
-set imap_user="dbusse"
-set postponed="imaps://mail.mke.4lpi.com:993/Drafts"
-set record="imaps://mail.mke.4lpi.com/Sent Items"
-set from="dbusse@4lpi.com"
+set spoolfile=imaps://mail.DOMAIN.com:993/INBOX
+set folder=imaps://mail.DOMAIN.com:993/
+set imap_user="USER"
+set postponed="imaps://mail.DOMAIN.com:993/Drafts"
+set record="imaps://mail.DOMAIN.com/Sent Items"
+set from="user@DOMAIN.com"
 
 
 ## how to sort 
