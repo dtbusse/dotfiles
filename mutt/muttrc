@@ -19,6 +19,9 @@ set pager_index_lines=15
 auto_view text/html
 alternative_order text/plain text/enriched text/html 
 
+## Enable links
+macro pager \Cu "|urlview<enter>" "call urlview to open links"
+
 ## Automatically poll subscribed mailboxes for new mail (new in 1.5.11)
 set imap_check_subscribed
 
