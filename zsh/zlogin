@@ -2,6 +2,11 @@ hl() {
         dig @10.200.10.5 $1.centare.com ANY | egrep "^$1" | awk '{print $5}'
 }
 
-PROMPT='%{$fg_bold[cyan]%}[%~]%{$reset_color%}%m%{$fg_bold[blue]%} $(git_prompt_info)>%{$reset_color%} '
+function virtualenv_info {
+            [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+}
+
+#PROMPT='%{$fg_bold[cyan]%}[%~]%{$reset_color%}%m%{$fg_bold[blue]%} $(git_prompt_info)>%{$reset_color%} '
+PROMPT='%{$fg_bold[cyan]%}[%~]%{$reset_color%}%m%{$fg_bold[blue]%} $(virtualenv_info) $(git_prompt_info)>%{$reset_color%} '
 
 set -o vi
