@@ -2,6 +2,12 @@ hl() {
         dig @10.200.10.5 $1.centare.com ANY | egrep "^$1" | awk '{print $5}'
 }
 
+### Here use http://bgp.he.net and search for the AS number of a company (e.g. Facebook AS32934)
+### and use that as the argument to pass in
+find_subnets() {
+        whois -h whois.radb.net -- "-i origin $1" | awk '/^route:/ {print $2;}' | sort | uniq
+}
+
 function virtualenv_info {
             [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
 }
