@@ -1,3 +1,15 @@
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# include .bashrc if it exists
+if [ -f "$HOME/.bashrc" ]; then
+    . "$HOME/.bashrc"
+fi
+
+### works for Linux
+genpasswd() {
+	local l=$1
+       	[ "$l" == "" ] && l=20
+      	tr -dc A-Za-z0-9_ < /dev/urandom | head -c ${l} | xargs
+}
 
 alias cls=clear
 alias w=who
