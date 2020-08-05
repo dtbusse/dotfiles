@@ -1,0 +1,9 @@
+!
+XTerm*loginShell:    true
+XTerm*font:          10x20
+XTerm*background:    black
+XTerm*foreground:    wheat
+XTerm*cursorColor:   orchid
+!
+xclock*reverseVideo: true
+xclock*hands:        grey

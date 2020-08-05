@@ -1,0 +1,6 @@
+xterm -geometry 100x27+20+20 &
+xclock -geometry 150x150-10+10 &
+xload -rv -geometry 150x150-10+180 &
+xeyes -geometry 150x100-10+360 &
+xsetroot -solid black &
+twm
