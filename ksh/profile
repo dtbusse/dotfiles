@@ -1,0 +1,24 @@
+#
+# .profile    -- Commands executed by a login using ksh or sh
+#
+
+# Put things in .kshrc just for login shells. Everything else here.
+
+# If this is a login shell, source our local .kshrc
+ENV=$HOME/.kshrc
+export ENV
+
+# Set file  permissions default umask. Makes new files readable by 
+# everyone, writable only by the owner.
+umask 022
+
+# Set the environmental variable LOGNAME
+LOGNAME=$(logname)
+export LOGNAME
+
+# This is handy variable to have
+HOST=$(hostname)
+export HOST
+
+PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/games
+export PATH HOME TERM

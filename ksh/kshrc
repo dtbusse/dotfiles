@@ -1,0 +1,19 @@
+#
+# .kshrc    -- Commands executed by a login using ksh or sh
+#
+
+# Put things in here just for login shells
+
+alias dl="clear ; echo '--------- Directory ----------' ; ls -ls | more -e"
+alias da="clear ; echo '--------- Directory ----------' ; ls -lsa | more -e"
+alias cls=clear
+
+# For systems with tset this line will check if your terminal type
+# is xterm. If not it will prompt you to enter a terminal type.
+eval `tset -m xterm:xterm -m $TERM:?\$\{TERM:-xterm\} -r -s -Q`
+
+#Don't let \^{}d logout
+set -o ignoreeof
+
+PS1="[\w]\h> "
+export PS1
