@@ -1,0 +1,10 @@
+# Settings
+
+encoding         = UTF-8
+fontName         = "Menlo"
+fontSize         = 18
+lineEndings      = '\n'
+showInvisibles   = false
+softWrap         = true
+tabSize          = 2
+
