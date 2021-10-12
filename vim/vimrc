@@ -78,6 +78,7 @@ set statusline+=%M                        " modified [+] flag
 set statusline+=%#Cursor#               " colour
 set statusline+=%#CursorLine#     " colour
 set statusline+=\ %t\                   " short file name
+set statusline+=branch:
 set statusline+=%{StatuslineGit()}
 set statusline+=%=                          " right align
 set statusline+=%#CursorLine#   " colour
