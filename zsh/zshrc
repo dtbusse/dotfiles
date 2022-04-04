@@ -13,6 +13,10 @@ alias h="history | tail -25"
 alias ping5="ping -c 5 "
 alias gpg=gpg2
 alias rtt="curl -o/dev/null -sw 'RTT,%{time_total} FB,%{time_starttransfer}\n'"
+#
+alias dol="doctl compute droplet list --format 'ID,Name,Public IPv4,Status'"
+alias dopo="doctl compute droplet-action power-on"
+alias dosd="doctl compute droplet-action shutdown"
 
 # shell options.  See https://scriptingosx.com/2019/06/moving-to-zsh-part-3-shell-options/ for examples
 set -o CORRECT
