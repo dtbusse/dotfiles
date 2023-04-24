@@ -13,6 +13,7 @@ function virtualenv_info {
 }
 
 #PROMPT='%{$fg_bold[cyan]%}[%~]%{$reset_color%}%m%{$fg_bold[blue]%} $(git_prompt_info)>%{$reset_color%} '
-PROMPT='%{$fg_bold[cyan]%}[%~]%{$reset_color%}%m%{$fg_bold[blue]%} $(virtualenv_info) $(git_prompt_info)>%{$reset_color%} '
+#PROMPT='%{$fg_bold[cyan]%}[%~]%{$reset_color%}%m%{$fg_bold[blue]%} $(virtualenv_info) $(git_prompt_info)>%{$reset_color%} '
+PROMPT='%{$fg[green]%}[%W][%T] %{$reset_color%}%{$fg_bold[cyan]%}[$[HISTCMD]][%~] %{$reset_color%}%m %(?.%F{green}🥃.%F{red}🤮)%f %{$fg_bold[blue]%} $(virtualenv_info) $(git_prompt_info)>%{$reset_color%} '
 
 set -o vi
