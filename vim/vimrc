@@ -57,6 +57,10 @@ Plugin 'ervandew/supertab'
 " Git commands
 Plugin 'https://github.com/tpope/vim-fugitive'
 "
+Plugin 'mhinz/vim-startify'
+"
+Plugin 'dbeniamine/cheat.sh-vim'
+"
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
