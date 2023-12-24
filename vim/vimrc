@@ -54,6 +54,9 @@ map <F7> :NERDTreeToggle<CR>
 " Supertab autocompletion
 Plugin 'ervandew/supertab'
 "
+" Git commands
+Plugin 'https://github.com/tpope/vim-fugitive'
+"
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
