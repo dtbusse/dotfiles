@@ -55,10 +55,13 @@ map <F7> :NERDTreeToggle<CR>
 Plugin 'ervandew/supertab'
 "
 " Git commands
+" :Git blame or :Git log
 Plugin 'https://github.com/tpope/vim-fugitive'
 "
+" Start with a menu
 Plugin 'mhinz/vim-startify'
 "
+" Use e.g. :Cheat ruby/map
 Plugin 'dbeniamine/cheat.sh-vim'
 "
 " All of your Plugins must be added before the following line
