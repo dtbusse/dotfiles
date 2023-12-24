@@ -27,6 +27,8 @@ colorscheme jellybeans
 "-----------------------------------------------------------------------------
 "" Load Vundle: VUNDLE is a plugin manager for VIM
 "" install via: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"
+" Install with :PluginInstall
 "-----------------------------------------------------------------------------
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -48,6 +50,9 @@ map <F7> :NERDTreeToggle<CR>
 "nmap <S-F7> :NERDTreeClose<CR>
 " Have NERD Tree always open on the right side
 " let g:NERDTreeWinPos = "right"
+"
+" Supertab autocompletion
+Plugin 'ervandew/supertab'
 "
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
