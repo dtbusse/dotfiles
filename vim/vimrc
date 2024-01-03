@@ -64,6 +64,9 @@ Plugin 'mhinz/vim-startify'
 " Use e.g. :Cheat ruby/map
 Plugin 'dbeniamine/cheat.sh-vim'
 "
+" Git.  Use :GV for git log or :GV! for current file
+Plugin 'junegunn/gv.vim'
+"
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
