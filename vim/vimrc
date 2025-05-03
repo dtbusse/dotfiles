@@ -67,8 +67,8 @@ Plugin 'dbeniamine/cheat.sh-vim'
 " Git.  Use :GV for git log or :GV! for current file
 Plugin 'junegunn/gv.vim'
 "
-" Add fzf search to vim.  Use :Files to bring up fuzzy finder                                                                                                                                      
-Plugin 'junegunn/fzf'                                                                                                                                         
+" Add fzf search to vim.  Use :Files to bring up fuzzy finder
+Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 "
 " All of your Plugins must be added before the following line
