@@ -67,7 +67,7 @@ Plugin 'dbeniamine/cheat.sh-vim'
 " Git.  Use :GV for git log or :GV! for current file
 Plugin 'junegunn/gv.vim'
 "
-" Add fzf search to vim                                                                                                                                       
+" Add fzf search to vim.  Use :Files to bring up fuzzy finder                                                                                                                                      
 Plugin 'junegunn/fzf'                                                                                                                                         
 Plugin 'junegunn/fzf.vim'
 "
