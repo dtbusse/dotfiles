@@ -110,3 +110,10 @@ set statusline+=%#CursorIM#     " colour
 set statusline+=\ %3l:%-2c\         " line + column
 set statusline+=%#Cursor#       " colour
 set statusline+=\ %3p%%\                " percentage
+
+" Set up hot keys for fzf
+let mapleader = "\<Space>"
+nnoremap <leader>f :FZF -m<cr>
+nnoremap <leader>r :FZF -m ~/workspace/repos<cr>
+nnoremap <leader>b :Buffers<cr>
+
