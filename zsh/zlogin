@@ -12,6 +12,22 @@ function virtualenv_info {
             [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
 }
 
+fzfgrep() {
+  grep --recursive --line-number --binary-files=without-match "$1" . | fzf --delimiter=':' -n 2.. --preview-window '+{2}-/2' --preview 'batcat --style=numbers --color=always {2} {1}'
+}
+
+# Generate a url safe password.
+gen_urlsafe_password() {
+  local length=${1:-"10"}
+  cat /dev/urandom | tr -dc A-Za-z0-9~_- | head -c $length && echo
+}
+
+# Generate a password for ansible vault
+gen_ansible_password() {
+  local length=${1:-"25"}
+  cat /dev/urandom | tr -dc A-Za-z | head -c $length && echo
+}
+
 NEWLINE=$'\n'
 
 #PROMPT='%{$fg_bold[cyan]%}[%~]%{$reset_color%}%m%{$fg_bold[blue]%} $(git_prompt_info)>%{$reset_color%} '
