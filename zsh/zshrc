@@ -2,23 +2,25 @@ alias cls=clear
 alias ut=uptime
 alias dl="clear ; echo '-------------- Directory ------------------' ; ls -ls | more"
 alias da="clear ; echo '-------------- Directory ------------------' ; ls -lsa | more"
-#
+
 # For OSX
 #alias dl="clear ; echo '-------------- Directory ------------------' ; CLICOLOR_FORCE=1 ls -ls | less -ceFRX"
 #alias da="clear ; echo '-------------- Directory ------------------' ; CLICOLOR_FORCE=1 ls -lsa | less -ceFRX"
 #alias pstree=proctree
-#
+
 alias v=vagrant
 alias h="history | tail -25"
 alias ping5="ping -c 5 "
 alias gpg=gpg2
 alias rtt="curl -o/dev/null -sw 'RTT,%{time_total} FB,%{time_starttransfer}\n'"
-#
+
 alias dol="doctl compute droplet list --format 'ID,Name,Public IPv4,Status'"
 alias dopo="doctl compute droplet-action power-on"
 alias dosd="doctl compute droplet-action shutdown"
+
 alias fd=fdfind
 alias bat=batcat
+alias dx="exa -bghHliS --icons"
 
 # shell options.  See https://scriptingosx.com/2019/06/moving-to-zsh-part-3-shell-options/ for examples
 set -o CORRECT
