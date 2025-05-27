@@ -71,6 +71,11 @@ Plugin 'junegunn/gv.vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 "
+" UTF-8 unicode support.                                                                                                                          
+" To search unicode: :UnicodeSearch check box
+" Then insert unicode.  Type unicode<C-X><C-Z>.  Example checkmark: U-2713<C-X><C-Z>
+Plugin 'chrisbra/unicode.vim'
+"
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
