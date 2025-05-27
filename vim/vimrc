@@ -72,7 +72,7 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 "
 " UTF-8 unicode support.                                                                                                                          
-" To search unicode: :UnicodeSearch check box
+" To search unicode: :UnicodeSearch <search string>, E.g. :UnicodeSearch check
 " Then insert unicode.  Type unicode<C-X><C-Z>.  Example checkmark: U-2713<C-X><C-Z>
 Plugin 'chrisbra/unicode.vim'
 "
