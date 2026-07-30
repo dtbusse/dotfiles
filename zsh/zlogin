@@ -34,6 +34,6 @@ NEWLINE=$'\n'
 #PROMPT='%{$fg_bold[cyan]%}[%~]%{$reset_color%}%m%{$fg_bold[blue]%} $(virtualenv_info) $(git_prompt_info)>%{$reset_color%} '
 #PROMPT='%{$fg[green]%}[%W][%T] %{$reset_color%}%{$fg_bold[cyan]%}[$[HISTCMD]][%~] %{$reset_color%}%m %(?.%F{green}🥃.%F{red}🤮)%f %{$fg_bold[blue]%} $(virtualenv_info) $(git_prompt_info)>%{$reset_color%} '
 #PROMPT='%{$fg[green]%}┌───[%W][%T] %{$reset_color%}%{$fg_bold[cyan]%}[$[HISTCMD]][%j][%~] %{$reset_color%}%m %(?.%F{green}🥃.%F{red}🤮)%f %{$fg_bold[blue]%} $(virtualenv_info) $(git_prompt_info)%{$reset_color%} ${NEWLINE}%{$fg_bold[green]%}└─$%{$reset_color%} '
-PROMPT='%{$fg[green]%}┌───[%W][%T] %{$reset_color%}%{$fg_bold[cyan]%}[$[HISTCMD]][%j][%~][%K{#000000}%F{#F5DEB3}HOME%K{reset}%F{cyan}] %{$reset_color%}%m %(?.%F{green}🥃.%F{red}🤮)%f %{$fg_bold[blue]%} $(virtualenv_info) $(git_prompt_info)%{$reset_color%} ${NEWLINE}%{$fg_bold[green]%}└─$%{$reset_color%} '
+PROMPT='%{$fg[green]%}┌───[%W][%T] %{$reset_color%}%{$fg_bold[cyan]%}[$[HISTCMD]][%j][%~][%K{#000000}%F{#F5DEB3}%m%K{reset}%F{cyan}] %{$reset_color%}%(?.%F{green}🥃.%F{red}🤮)%f %{$fg_bold[blue]%} $(virtualenv_info) $(git_prompt_info)%{$reset_color%} ${NEWLINE}%{$fg_bold[green]%}└─$%{$reset_color%} '
 
 set -o vi
