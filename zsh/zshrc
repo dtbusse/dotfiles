@@ -25,3 +25,13 @@ alias dx="exa -bghHliS --icons"
 # shell options.  See https://scriptingosx.com/2019/06/moving-to-zsh-part-3-shell-options/ for examples
 set -o CORRECT
 set -o AUTO_CD
+
+# Set up CDPATH (path separted by a space)                                                                                    
+cdpath=($HOME/workspace)                                                                                                      
+
+zstyle ':completion:*' group-name ''                                                                                          
+zstyle ':completion:*:descriptions' format %d                                                                                 
+zstyle ':completion:*:descriptions' format %B%d%b                                                                             
+zstyle ':completion:*:complete:(cd|pushd):*' tag-order \                                                                      
+       'local-directories named-directories'
+
